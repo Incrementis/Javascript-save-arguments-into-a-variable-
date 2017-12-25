@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>"arguments" in variable</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		===============================================================================================
+	-->	
+	
+	<!--The "style" attribute in "body" centers the whole content-->
+	<body style="text-align: center; margin-left: auto; margin-right: auto;">
+	
+		<h2>Image Gallery</h2>
+	
+		<!--Also centering and defining a fixed width size-->
+		<section style="width: 596px; 
+						margin-left: auto; 
+						margin-right: auto;">
+	
+	
+			<!--Without "position:absolute;" resizing will not work here-->
+			<div style="position:absolute;">
+			
+			
+				<!--width consumes 10%-->
+				<button style=" height: 375px;
+								width: 10%;
+								background-color: lightgrey;
+								border: none;
+								opacity: 0.5;
+								float: left;"
+						onclick="buttonPressed('Previous');">
+								
+								<<
+				</button>
+				
+				
+				<!--width consumes 80%-->				
+				<img id="picture" src="Heart.png" style="height:375px; width:80%;">
+				
+				
+				<!--width consumes 10% and adding all percentages results in 100% of the "div" container-->				
+				<button style=" height: 375px;
+								width: 10%;
+								background-color: lightgrey;
+								border: none;
+								opacity: 0.5;
+								float: right;"
+						onclick="buttonPressed('Next');">
+								
+								>>
+				</button>
+				
+				
+			</div>
+			
+		
+		</section>
+	
+	
+		<!--An artifical gap to make the following html content beneath visible -->
+		<div style="padding-top: 400px;"></div>
+	
+
+		<section>
+		
+		
+			<hr style="width:50%;">
+			
+			For more explanation please visit - 
+			<a href = "https://github.com/Incrementis/Javascript-save-arguments-into-a-variable-/wiki"> 
+			Save arguments to a variable Wiki</a>
+			
+			
+		</section>
+		
+
+		
+	</body>
+
+	
+	<script language="javascript" type="text/javascript" src="arguments.js"></script> 
+
+</html>
